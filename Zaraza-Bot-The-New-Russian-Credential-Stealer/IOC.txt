@@ -1,0 +1,2 @@
+SHA-256 HASH 2cb42e07dbdfb0227213c50af87b2594ce96889fe623dbd73d228e46572f0125
+URL : hxxps://api.telegram[.]org/bot6007402729:AAEPb0k0ec_Eid2gxzweSWuNju-dWhHicS0/sendDocument?chat_id=5881556974
