@@ -1,7 +1,0 @@
-SHA-256 HASH bb3d35cba3434f053280fc2887a7e6be703505385e184da4960e8db533cf4428
-
-SHA-256 HASH d71f6fbc9dea34687080a2e12bf326966f6841d51294bd665261e07281459eeb
-
-URL hXXps://raw.githubusercontent[.]com/efimovah/abcd/main/xxx.gif
-
-URL hXXp://ip-api[.]com/json
