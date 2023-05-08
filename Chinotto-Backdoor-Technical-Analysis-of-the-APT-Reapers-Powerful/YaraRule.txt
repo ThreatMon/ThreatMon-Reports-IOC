@@ -1,0 +1,14 @@
+rule Armageddon_Pteranodon
+{
+ meta:
+    author = "ThreatMon"
+    date = "2023-03-24"
+    hash = "d0ec6d91cf9e7c64cf11accadf18f8b5a18a10efbecb28f797b3dbbf74ae846d"
+ strings:
+    str1=”IUAvx6CHOil92jqFiHCjiPhzDC”
+    str2=”172.93.193.158”
+    str3=”/Data/goldll/proc.php”
+    str4=”cmd.exe /c c:\users\public\libraries\Phone.ini”
+ condition:
+    all of ($str*)
+}
