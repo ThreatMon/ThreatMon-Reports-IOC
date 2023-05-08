@@ -1,0 +1,15 @@
+rule DoNot_APT_DLL: DoNot APT DLL
+{
+ meta:
+    description = "DoNot_APT_DLL”
+    author = "ThreatMon"
+    date = "2023/1/14"
+    sample1 = "d1b828440268685f40a1bb45dda46748d0713a2365e669806d3b6b14f370bb3f"
+ strings:
+    $op = {2C ?? 8D 49 ?? 88 41 ?? 8A 01 84 C0 75}
+    $pdb = "C:\\Users\\user\\source\\repos\\psdll\\Release\\psdll.pdb" ascii
+    $s1 = "webservice" ascii
+    $s2 = "CreateProcessA" ascii
+ condition:
+    uint16(0) == 0x5A4D and all of them
+}
