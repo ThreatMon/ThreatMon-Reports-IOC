@@ -1,7 +1,7 @@
 rule Zaraza_Bot
 {
 meta:
-    author = "seyitsec"
+    author = "ThreatMon"
     date = "2023-04-28"
     hash = "2cb42e07dbdfb0227213c50af87b2594ce96889fe623dbd73d228e46572f0125"
 strings:
