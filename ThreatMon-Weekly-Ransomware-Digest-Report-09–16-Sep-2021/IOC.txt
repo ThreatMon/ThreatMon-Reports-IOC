@@ -1,0 +1,122 @@
+BlackMatter:
+domain paymenthacks.com
+domain mojobiden.com
+FileHash-MD5 b06e2455a9c7c9485b85e9bdcceb8078
+FileHash-MD5 598c53bfef81e489375f09792e487f1a
+FileHash-MD5 d0512f2063cbd79fb0f770817cc81ab3
+FileHash-MD5 3f9a28e8c057e7ea7ccf15a4db81f362
+FileHash-MD5 a55bc3368a10ca5a92c1c9ecae97ced9
+FileHash-MD5 ba375d0625001102fc1f2ccb6f582d91
+FileHash-SHA1 a63304592f422656d7abcb086915f9e799ad4641
+---------------------------------------------------------------------------------
+Conti-News:
+Domain docns.com
+Domain tapavi.com
+Domain contirecovery.best
+Domain secost.com
+url_path /Menus.aspx
+url_path /menus.aspx
+url_path /us/ky/louisville/312-s-fourth-st.html
+FileHash-SHA256 4cfb525902490909512d065a59ae820c99ec6129f7ea785d89bc20e7f7384509
+FileHash-SHA256 0043aa3c5236d901333db1a4c9e0fd6e40a27b3f5330bca8a59de78e30758334
+FileHash-SHA256 52c851fc784e175cd2a029abfad62d3bf0408bed85d77d4f94d363e892bc4d60
+FileHash-SHA256 cb6eac0222102b6dcb72386aea373e89640f7c3a335591b561e56f35633f2bda
+FileHash-SHA256 105d2eef1c6802e2ba3da84afe5ed91e986b55e77fefe1b6a203d3131ead6269
+FileHash-SHA256 c27875b0053bdddbfd121d21dc3cdb8bbf41091c8a8a0614c666aec8b4d3b612
+FileHash-SHA256 eb03aba46e818640013bfe6b94367cae216a9ad02dabe69f241e3ace3f1a9f37
+FileHash-SHA256 1c947639ec826b462e6c36416c873d26c11b081de707d9b5d963e30b59d9234d
+FileHash-SHA256 246907de4674c7a327a1a0b7ce92e50edd7cd02f56d6a008acc134f5fb5bb71c
+FileHash-SHA256 d1c1e7edc840a0623e0fdc9f2689133339e3ce58da1e24bce513a4673b9ce054
+IP 23.82.128.116
+---------------------------------------------------------------------------------
+Cuba:
+FileHash-SHA1 d318737c9116dd181c2ec074c1ffc9e2f42bc31b
+FileHash-SHA1 0763e80f967822c263d85525d29cb535004e3156
+FileHash-MD5 23d0033fe765242cbc07ceeab7ba3736
+FileHash-MD5 f9239348c88b2593814541d33c2df11d
+URL http://phoenixlabs.org
+FileHash-SHA256 b952e63fe46b25ee4ecb725373bddd1b1776fbc4ba73aee7b7b384a3b0f7f71e
+FileHash-SHA256 78ce13d09d828fc8b06cf55f8247bac07379d0c8b8c8b1a6996c29163fa4b659
+Domain phoenixlabs.org
+CVE CVE-2013-7331
+CVE CVE-2014-0569
+---------------------------------------------------------------------------------
+REvil:
+URL http://51.77.110.6/uploadFile.php
+Domain http://209.141.32.210/file/file.exe
+Domain zaczytana.com
+Domain tbalp.co.uk
+Domain lassocrm.com
+Domain kookooo.com
+Domain guohedd.com
+Domain drnelsonpediatrics.com
+Domain cc-experts.de
+Domain bourchier.org
+IP 162.215.253.15
+IP 103.195.185.104
+IP 54.37.78.107
+IP 68.65.122.53
+IP 104.219.248.113
+IP 162.251.80.24
+IP 209.73.183.22
+IP 31.220.40.22
+IP 217.160.170.81
+IP 185.176.221.45
+FileHash-SHA256 934c557e52bd47fa312ea4098e05781145d0b81c9dc543ef42b266813bdb05d4
+FileHash-SHA256 277bbabf2bcffc0f950a23b40620b7ffe5bc2093a4028f39018f243c3ca6ebce
+FileHash-SHA1 24e8a7a0b9fdf929e6cc4b52b0470bf4f7b6f244
+FileHash-SHA1 140dfe38d2fce298f5d5a4a8392494f30b7dea63
+FileHash-SHA1 8b1d4ae7cbc6c0fa0705122b9556745670863214
+FileHash-SHA1 05cf02f7f79f4dda97ffdc60da9171ec0699bc68
+---------------------------------------------------------------------------------
+Grief:
+FileHash-SHA256 dda4598f29a033d2ec4f89f4ae687e12b927272462d25ca1b8dec4dc0acb1bec
+FileHash-SHA256 b5c188e82a1dad02f71fcb40783cd8b910ba886acee12f7f74c73ed310709cd2
+FileHash-SHA256 b21ad8622623ce4bcdbf8c5794ef93e2fb6c46cd202d70dbeb088ea6ca4ff9c8
+FileHash-SHA256 91e310cf795dabd8c51d1061ac78662c5bf4cfd277c732385a82f181e8c29556
+FileHash-SHA256 "0864575d4f487e52a1479c61c2c4ad16742d92e16d0c10f5ed2b40506bbc6ca0
+FileHash-SHA1 ab291a932bcc1c74231a7a7fda74017956927f37
+FileHash-SHA1 "8631dc198c7641300b08d17fa8686095f045821a"
+FileHash-MD5 72ba727d7441954ecaefd9732d12a36c
+FileHash-MD5 3eed5f9a1d57b6ae71a5d434ea38814d
+---------------------------------------------------------------------------------
+Vice Society:
+FileHash-SHA256 6f191f598589b7708b1890d56b374b45c6eb41610d34f976f0b4cfde8d5731af
+CVE CVE-2021-34527
+CVE CVE-2021-1675
+FileHash-SHA1 466d8d17f20b87380a0e7c18daac95136291f01a
+FileHash-MD5 d5dd0a49d5a3c45e951ef91066224e5b
+---------------------------------------------------------------------------------
+PYSA:
+FileHash-SHA1 932626b6f4c6eb5e21115c8ab5689f23b4d68155
+FileHash-SHA1 6b6855931e69d27f5f2e2d828fbeb4db91688996
+FileHash-SHA1 618dc1991c1233f680d28f995394c46db9cfc2d2
+FileHash-SHA1 f13800d747ca3d79785f373af3ce098a0298a6d7
+FileHash-SHA1 3c7ae5cfc9053284c73aa34819fd47fd7bc40cc7
+FileHash-SHA1 425209b891142704462baf14048d0dd59d0c7561
+FileHash-SHA1 81d1497490ee1ae20b2c87dff48cee31cdc4466f
+FileHash-SHA1 7830608d116bec1cc8414fef03ea7d098201e051
+FileHash-SHA1 367734ce59f38110fb0333a4d28a89dd
+FileHash-SHA1 dc82cd73d0738cfe2e49c499c2fa631e
+---------------------------------------------------------------------------------
+Ragnar Locker:
+FileHash-SHA1 01fff32c5e016bfd3692072ef0ef5b943f2da110
+FileHash-SHA1 af53890ed1d4753e7493d48862bdd7d18a2b11f6
+FileHash-SHA1 0f944504eebfca5466b6113853b0d83e38cf885a
+FileHash-SHA1 e22344a92c91b567a6cba7eb66686c438d479462
+FileHash-SHA1 64b99b55f0a1ec4f8f30897a460c574300a8acbd
+FileHash-SHA1 5938b9900e0c1978802319dc1cbababd70abf597
+FileHash-SHA1 c24fedb9b8a592722d5a9adb34d276fc3b329d6f
+FileHash-SHA1 5197d1b54494f8cb043759b35e097c660a9e09ac
+FileHash-SHA1 b155264bbfbad7226b5eb3be2ab38c3ecd9f3e18
+FileHash-SHA1 7c3a082237504d3bf36e47b986e02e014a2b8abc
+Domain updatefileservercross.com
+Domain sophoswarehouse.com
+Domain sophostraining.org
+Domain sophosfirewallupdate.com
+Domain sophosenterprisecenter.com
+Domain rnfdsgm6wb6j6su5txkekw4u4y47kp2eatvu7d6xhyn5cs4lt4pdrqqd.onion
+Domain ragnarokfromasgard.com
+Domain pb36hu4spl6cyjdfhing7h3pw6dhpk32ifemawkujj4gp33ejzdq3did.onion
+Domain filedownloaderserverx.com
+Domain filedownloaderservers.com
