@@ -1,0 +1,16 @@
+Group Name  Type    Indicator
+LockBit 3.0 SHA-256 0d38f8bf831f1dbbe9a058930127171f24c3df8dae81e6aa66c430a63cbe0509
+LockBit 3.0 SHA-256 c690148b6baec765c65fe91ea9f282d6a411ae90c08d74d600515b3e075e21b2
+LockBit 3.0 SHA-256 c6cf5fd8f71abaf5645b8423f404183b3dea180b69080f53b9678500bab6f0de
+LockBit 3.0 SHA-256 391a97a2fe6beb675fe350eb3ca0bc3a995fda43d02a7a6046cd48f042052de5
+LockBit 3.0 SHA-256 d61af007f6c792b8fb6c677143b7d0e2533394e28c50737588e40da475c040ee
+LockBit 3.0 SHA-256 80e8defa5377018b093b5b90de0f2957f7062144c83a09a56bba1fe4eda932ce
+------------------------------------------------------------------------------------
+BlackBasta SHA-256 bba04c832f3e278361c826c4fafc70ec98d016d8ed5de6bc90db87a773cb658b
+BlackBasta SHA-256 96339a7e87ffce6ced247feb9b4cb7c05b83ca315976a9522155bad726b8e5be
+BlackBasta SHA-256 ae7c868713e1d02b4db60128c651eb1e3f6a33c02544cc4cb57c3aa6c6581b6e
+BlackBasta SHA-256 7883f01096db9bcf090c2317749b6873036c27ba92451b212b8645770e1f0b8a
+BlackBasta SHA-256 17205c43189c22dfcb278f5cc45c2562f622b0b6280dcd43cc1d3c274095eb90
+BlackBasta SHA-256 5d2204f3a20e163120f52a2e3595db19890050b2faa96c6cba6b094b0a52b0aa
+------------------------------------------------------------------------------------
+BlackCat SHA-256 45b8678f74d29c87e2d06410245ab6c2762b76190594cafc9543fb9db90f3d4f
