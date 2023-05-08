@@ -1,0 +1,2 @@
+SHA-256 HASH d0ec6d91cf9e7c64cf11accadf18f8b5a18a10efbecb28f797b3dbbf74ae846d
+URL http://172.93.193[.]158/Data/goldll/proc.php
