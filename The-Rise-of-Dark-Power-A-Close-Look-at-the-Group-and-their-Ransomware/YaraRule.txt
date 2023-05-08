@@ -1,0 +1,14 @@
+rule Dark_Power_Ransomware
+{
+meta:
+    author = "ThreatMon"
+    date = "2023-03-31"
+    hash = "11ddebd9b22a3a21be11908feda0ea1e1aa97bc67b2dfefe766fcea467367394"
+strings:
+    str1= ”GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.1.0”
+    str2= ”<?xml version="1.0" encoding="UTF-8" standalone="yes"?><assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0"><assemblyIdentity version="1.0.0.0" processorArchitecture="*" name="winim" type="win32"/><dependency><dependentAssembly><assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*"/></dependentAssembly></dependency></assembly>\r\n”
+    str3= ”_Z53del_OOZOOZOnimbleZpkgsZwinim4551O56O48ZwinimZcom_1049P57tyObject_variantcolonObjectType___FBSF3pWyJz9clqwLRXzZTsA”
+    str4= ”_Z58newTable_OOZOOZOnimbleZpkgsZwinim4551O56O48ZwinimZcom_1907x”
+condition:
+    all of ($str*)
+}
