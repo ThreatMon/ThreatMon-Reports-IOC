@@ -1,0 +1,10 @@
+Hashes
+  ● 9de6b542a323b5198dbf472d612313f0cc236e9156e78c583da055d0ce7a29f7
+  ● d1b828440268685f40a1bb45dda46748d0713a2365e669806d3b6b14f370bb3f
+  ● b59913878de7c9b10a2c4dfc4f9d1634b95510b4efafb546c46ef076f917911c
+Paths
+  ● \Users\Public\Documents\desktop.ini.txt
+  ● C:\ProgramData\WindowsSecurity\winnet.dll
+  ● C:\ProgramData\WindowsSecurity\winnet.zip
+IPs
+  ● 213.227.154.196
