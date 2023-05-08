@@ -1,0 +1,13 @@
+rule APT41_Powershell_Backdoor
+{
+meta:
+  author = "ThreatMon"
+  date = "2023-04-22"
+  hash = "bb3d35cba3434f053280fc2887a7e6be703505385e184da4960e8db533cf4428"
+strings: 
+  str1= ”C:\Windows\system32\forfiles.exe /p c:\windows\system32/m notepad.exe /c "cmd.exe /c whoami >> %appdata%\z.abcd”
+  str2= ”5621584862:AAGG6WcTvFu7ADpnMT42PqwOoKfTqMDQKkQ::5028607068”
+  str3= ”Software\Microsoft\Windows\CurrentVersion\RunOnce”
+condition:
+  all of ($str*)
+}
