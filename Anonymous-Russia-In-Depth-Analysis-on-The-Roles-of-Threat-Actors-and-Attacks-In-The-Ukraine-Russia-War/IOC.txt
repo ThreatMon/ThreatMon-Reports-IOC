@@ -1,0 +1,6 @@
+IPs:
+https://40.68.220.40:9443/authenticationendpoint/balgo.jsp
+https://182.73.18.131:443/authenticationendpoint/balgo.jsp
+https://63.33.121.175:443/authenticationendpoint/balgo.jsp
+https://54.228.15.59:443/authenticationendpoint/balgo.jsp
+https://18.169.37.128:443/authenticationendpoint/balgo.jsp
