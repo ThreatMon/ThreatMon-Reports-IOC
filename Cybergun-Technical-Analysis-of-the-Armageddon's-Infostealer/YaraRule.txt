@@ -1,0 +1,14 @@
+rule Armageddon_Pteranodon
+{
+   meta:
+      author = "ThreatMon"
+      date = "2023-03-17"
+      hash = "139547707f38622c67c8ce2c026bf32052edd4d344f03a0b37895b5de016641a"
+   strings:
+      str1=”Global\flashUpdated_r”
+      str2=”profiles_c.ini”
+      str3=”Mozilla/1.0 (Windows NT 6.1; Win64; x64; rv:102.0) Gecko Firefox/102.0 (64-bit)”
+      str4=”trend.txt”
+   condition:
+      all of ($str*)
+}
