@@ -1,0 +1,4 @@
+SHA-256 HASH
+0d70893cd0ac11d0620faed3ee22bf8db61c430ea3ff862045cd632e714e767f
+Domain
+0.tcp.sa.ngrok[.]io
