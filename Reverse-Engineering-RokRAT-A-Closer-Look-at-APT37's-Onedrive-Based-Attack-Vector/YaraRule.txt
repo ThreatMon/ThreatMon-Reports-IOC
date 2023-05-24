@@ -1,0 +1,31 @@
+rule RokRAT_New
+{
+    meta:
+
+
+        author = "ThreatMon"
+        date = "2023-05-22"
+        hash = "aa76b4db29cf929b4b22457ccb8cd77308191f091cde2f69e578ade9708d7949"
+
+
+    strings:
+
+
+        str1= ”https://api.pcloud.com/uploadfile?path=%s&filename=%s&nopartial=1”
+        str2= ”dir /A /S %s >> \"%%temp%%/%c_.TMP\”
+        str3= ”cmd.exe”
+
+
+
+
+
+
+
+
+    condition:
+
+
+        all of ($str*)
+
+
+}
