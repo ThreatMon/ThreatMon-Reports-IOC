@@ -1,0 +1,14 @@
+rule SharpPanda_DLL
+{
+    meta:
+        author         = "ThreatMon"
+        description    = "Detects SharpPanda’s DLL Downloader "
+        created_date   = "2023-06-07"
+    strings:
+        $str1 = “OGpfN0RrWEM=”
+        $str2 = “RzBBbnlXaGVyZV91cC5qc3A=”
+        $str3 = "D:\Project\Downloader\dll_rls\Downloader.pdb”
+        $str4 = "Downloader.dll"
+    condition:
+        all of ($str*)
+}
