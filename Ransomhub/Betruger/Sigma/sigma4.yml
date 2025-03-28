@@ -1,0 +1,20 @@
+title: Malicious Avast Application DNS Requests
+id: 85b4e8a9-4b0c-4fdd-8d67-b72dca12bc1f
+status: test
+description: Detects malicious avast.exe attempting to connect to suspicious domains via DNS queries
+author: Aziz Kaplan <aziz.kaplan@threatmonit.io>
+date: 2025-03-23
+references:
+  - ThreatMon Malware R&D
+logsource:
+  product: windows
+  category: dns_query
+detection:
+  selection:
+	Image|endswith: '\avast.exe'
+	QueryName|contains:
+  	- '504e1c95.host.njalla.net'
+  condition: selection
+falsepositives:
+  - Legitimate Avast DNS queries
+level: high

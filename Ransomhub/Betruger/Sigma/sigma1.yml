@@ -1,0 +1,21 @@
+title: Trojanized Avast Binary C2 Communication
+id: f8a12b2e-d45f-4a84-9b4b-1e0e3e8f5a7d
+status: test
+description: Detects suspicious C2 communication from trojanized avast.exe binary to malicious servers.
+author: Aziz Kaplan <aziz.kaplan@threatmonit.io>
+date: 2025-03-23
+references:
+  - ThreatMon Malware R&D
+logsource:
+  product: windows
+  category: network_connection
+detection:
+  selection:
+	Image|endswith: '\avast.exe'
+	DestinationHostname|contains: 'njalla.net'
+	Initiated: 'true'
+  condition: selection
+falsepositives:
+  - Legitimate Avast security software updates
+  - Downloading virus definitions
+level: high

@@ -1,0 +1,22 @@
+title: Suspicious Avast Repetitive C2 Connection Attempts
+id: e02a4c10-7193-4a79-af9b-75d580b1d68c
+status: test
+description: Detects fake avast.exe making repetitive connection attempts to the same domain within short time intervals
+author: Aziz Kaplan <aziz.kaplan@threatmonit.io>
+date: 2025-03-23
+references:
+  - ThreatMon Malware R&D
+logsource:
+  product: windows
+  category: network_connection
+detection:
+  selection:
+	Image|endswith: '\avast.exe'
+	DestinationHostname|contains:
+  	- 'njalla.net'
+	Initiated: 'true'
+  timeframe: 5m
+  condition: selection | count() > 5
+falsepositives:
+  - Heavy update activity
+level: high

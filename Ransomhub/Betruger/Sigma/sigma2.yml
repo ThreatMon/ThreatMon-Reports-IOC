@@ -1,0 +1,27 @@
+title: Fake Avast Application Detected
+id: 762f3a9c-5d2b-42e3-bc4f-16c7f8d94856
+status: test
+description: Detects execution of a malicious avast.exe application that mimics the legitimate Avast security software.
+author: Aziz Kaplan <aziz.kaplan@threatmonit.io>
+date: 2025-03-23
+references:
+  - ThreatMon Malware R&D
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection:
+	Image|endswith: '\avast.exe'
+	CurrentDirectory|contains:
+  	- '\Desktop\'
+  	- '\Downloads\'
+  	- '\Documents\'
+  filter:
+	IntegrityLevel: 'System'
+	ParentImage|endswith:
+  	- '\Program Files\Avast Software\Avast\AvastSvc.exe'
+  	- '\Program Files (x86)\Avast Software\Avast\AvastSvc.exe'
+  condition: selection and not filter
+falsepositives:
+  - User executing normal Avast installer from desktop
+level: high

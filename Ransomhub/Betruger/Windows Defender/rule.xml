@@ -1,0 +1,16 @@
+<Detections>
+  <Detection>
+	<Name>Betruger Backdoor Detection</Name>
+	<Description>Detects Betruger backdoor malware associated with RansomHub group</Description>
+	<Severity>High</Severity>
+	<FileSha256 Detect="Equals">ae7c31d4547dd293ba3fd3982b715c65d731ee07a9c1cc402234d8705c01dfca</FileSha256>
+	<FileSha256 Detect="Equals">b058c128c801e2ee03874e183239ff369c599f3a2324905ff73f99d16d3b1a16</FileSha256>
+	<FileName Detect="Contains">aswAvBootTimeScanShMin.exe</FileName>
+	<FileName Detect="Contains">mailer.exe</FileName>
+	<FileName Detect="Contains">turbomailer.exe</FileName>
+	<NetworkConnection>
+  	<RemoteIP Detect="Equals">80.78.28.149</RemoteIP>
+  	<RemoteDomain Detect="Contains">504e1c95.host.njalla.net</RemoteDomain>
+	</NetworkConnection>
+  </Detection>
+</Detections>
