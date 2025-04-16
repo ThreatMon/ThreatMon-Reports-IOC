@@ -1,3 +1,5 @@
+// This file may also detect the legimite ConnectWise Remote Desktop application. Therefore, make sure that ConnectWise is not being used for Remote Desktop operations within the organization before blocking it.
+
 rule ConnectWise_Client_DLL {
     meta:
         description = "Detects ConnectWise Client DLL with high accuracy"
