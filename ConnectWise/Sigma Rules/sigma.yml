@@ -1,0 +1,22 @@
+title: Process Hollowing via dfsvc.exe
+id: 2a3b4c5d-6e7f-8g9h-0i1j-2k3l4m5n6o7p
+status: test
+description: Detects potential process hollowing attacks using dfsvc.exe, a legitimate Microsoft ClickOnce component that's being abused in this attack
+author: Aziz Kaplan <aziz.kaplan@threatmonit.io>
+date: 2025/04/16
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+	ParentImage|endswith: '\dfsvc.exe'
+	Image|endswith:
+  	- '\ScreenConnect.WindowsClient.exe'
+  	- '\ScreenConnect.ClientService.exe'
+  selection_creation:
+	Image|endswith: '\dfsvc.exe'
+	CommandLine|contains: 'CREATE_SUSPENDED'
+  condition: selection or selection_creation
+falsepositives:
+  - Legitimate ClickOnce deployments
+level: critical
