@@ -1,2 +1,9 @@
 hxxps[:]//admin[.]ratoscreenconne[.]com
+hxxps[:]//app[.]ratoscbom[.]com
+hxxps[:]//secure[.]ratopanelsz[.]com
+hxxps[:]//account[.]ratopanelsz[.]com
+hxxps[:]//mail[.]ratoscreenco[.]com
+hxxps[:]//signin[.]ratoscreen[.]com
+hxxps[:]//app[.]ratoscreensell[.]com
+hxxps[:]//account[.]ratoscreenco[.]com
 
