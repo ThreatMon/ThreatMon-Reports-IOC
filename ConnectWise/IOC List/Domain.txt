@@ -1,1 +1,8 @@
 admin[.]ratoscreenconne[.]com
+app[.]ratoscbom[.]com
+secure[.]ratopanelsz[.]com
+account[.]ratopanelsz[.]com
+mail[.]ratoscreenco[.]com
+signin[.]ratoscreen[.]com
+app[.]ratoscreensell[.]com
+account[.]ratoscreenco[.]com
