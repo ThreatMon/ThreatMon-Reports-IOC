@@ -1,0 +1,33 @@
+#This sigma rule has been developed and tested by ThreatMon Malware R&D Team.
+#It is publicly shared and can used by everyone and be integrated to the siem solutions
+
+title: Fake Chrome ELF DLL Loaded by Chrome
+id: 7a3f4b2c-6b8c-11eb-9439-0242ac130002
+status: test
+description: Detects when chrome.exe loads a potentially fake chrome_elf.dll (missing Google LLC signature, incorrect size, or hash mismatch)
+references:
+  - ThreatMon Malware R&D
+author: Aziz Kaplan <aziz.kaplan@threatmonit.io>
+date: 2025-05-07
+tags:
+  - attack.persistence
+  - attack.defense_evasion
+  - attack.t1574.002  # DLL Side-Loading
+logsource:
+  product: windows
+  category: image_load
+detection:
+  selection:
+	Image|endswith: '\chrome.exe'
+	ImageLoaded|endswith: '\chrome_elf.dll'
+  legitimate_signature:
+	Signature: 'Google LLC'
+  legitimate_size:
+	FileSize: 1613824  # 1.54MB in bytes
+  legitimate_hash:
+	Hashes|contains: 'SHA256=f26b70188c4764a9d28fbcf23e9280d69791729fd37e518ffe5d1b1604ee79e2'
+  condition: selection and not (legitimate_signature and legitimate_size and legitimate_hash)
+falsepositives:
+  - Legitimate updates to chrome_elf.dll that change the hash or size
+  - Alternative signing certificates used by Google
+level: critical
