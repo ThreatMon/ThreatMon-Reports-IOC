@@ -1,0 +1,38 @@
+title: NullPoint Stealer Cryptocurrency Wallet Access
+id: 9e3d5a81-f6c7-48b0-9f1c-24c58a93d9e7
+status: experimental
+description: Detects suspicious access to cryptocurrency wallet files as seen with NullPoint Stealer
+author: Aziz Kaplan <aziz.kaplan@threatmonit.io>
+date: 2025/05/09
+logsource:
+	product: windows
+	category: file_event
+detection:
+	selection_files:
+    	TargetFilename|endswith:
+        	- '\wallet.dat'
+        	- '*.wallet'
+    	Image|endswith:
+        	- '*.exe'
+	selection_folders:
+    	TargetFilename|contains:
+        	- '\Electrum\wallets\'
+        	- '\MultiBit\'
+        	- '\Bitcoin\'
+        	- '\Litecoin\'
+        	- '\Dogecoin\'
+        	- '\Ethereum\'
+        	- '\Exodus\'
+        	- '\Atomic\'
+	filter:
+    	Image|endswith:
+        	- '\bitcoin.exe'
+        	- '\electrum.exe'
+        	- '\multibit.exe'
+        	- '\dogecoin.exe'
+        	- '\litecoin.exe'
+	condition: (selection_files or selection_folders) and not filter
+falsepositives:
+	- Legitimate cryptocurrency applications
+	- Backup software
+level: high
