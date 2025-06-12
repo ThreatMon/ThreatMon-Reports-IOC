@@ -1,0 +1,63 @@
+title: PowerShell Download and Execute via Windows Run Dialog
+id: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+status: stable
+description: Detects PowerShell commands executed via Windows Run dialog that download and execute remote content using various obfuscation techniques
+author: ThreatMon Malware R&D
+date: 2025/06/12
+modified: 2025/06/12
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_powershell:
+        Image|endswith: '\powershell.exe'
+        ParentImage|endswith: '\explorer.exe'
+    selection_string_concat:
+        CommandLine|contains:
+            - "'+''"
+            - "'+'"
+            - "'ht'+'tp'"
+            - "'Net.'+'Web'"
+    selection_download_string:
+        CommandLine|contains:
+            - "Download'+'String"
+            - "DownloadString"
+            - "Download'+'"
+    selection_scriptblock:
+        CommandLine|contains:
+            - "ScriptBlock"
+            - "[ScriptBlock]::Create"
+    selection_obfuscated_execution:
+        CommandLine|contains:
+            - "&${"
+            - "& ${"
+            - "}&${"
+    selection_basic_obfuscation:
+        CommandLine|contains|all:
+            - "-w h"
+            - "-nop"
+            - "-c"
+    selection_webclient:
+        CommandLine|contains:
+            - "New-Object"
+            - "WebClient"
+            - "Net.Web"
+    condition: selection_powershell and (
+        (selection_string_concat and (selection_download_string or selection_webclient)) or
+        (selection_scriptblock and selection_obfuscated_execution) or
+        (selection_basic_obfuscation and selection_download_string)
+        )
+falsepositives:
+    - Legitimate administrative scripts executed via Run dialog
+    - Authorized remote management or deployment tools
+level: high
+fields:
+    - CommandLine
+    - User
+    - Image
+    - ParentImage
+    - ProcessId
+    - ParentProcessId
+    - CurrentDirectory
+
+
