@@ -1,0 +1,31 @@
+title: Pulsar RAT System Information Retrieval
+id: 8b23fa60-2e11-44c4-b7e7-31b6b2c954c4
+status: experimental
+description: Detects WMI queries and API calls used by Pulsar RAT to gather system information.
+author: Seyyit Unutmaz <seyyit.unutmaz@threatmonit.io>
+date: 2025/05/30
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection_wmi_queries:
+    CommandLine|contains:
+      - "SELECT * FROM Win32_OperatingSystem"
+      - "SELECT * FROM Win32_Processor"
+      - "SELECT * FROM Win32_BIOS"
+      - "SELECT * FROM Win32_BaseBoard"
+      - "SELECT * FROM Win32_ComputerSystem"
+      - "SELECT * FROM Win32_DiskDrive"
+      - "SELECT * FROM AntivirusProduct"
+  selection_api_calls:
+    CommandLine|contains:
+      - "Environment.MachineName"
+      - "GetPhysicalAddress"
+      - "NetworkInterface.GetAllNetworkInterfaces"
+      - "ManagementObjectSearcher"
+      - "Directory.GetFiles"
+  condition: selection_wmi_queries or selection_api_calls
+falsepositives:
+  - Legitimate system inventory tools
+  - Hardware diagnostics or monitoring software
+level: medium
