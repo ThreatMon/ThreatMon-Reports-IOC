@@ -1,0 +1,25 @@
+title: Matanbuchus DNS variant C2 via UDP 5354
+id: 9e1de699-0e00-493d-af4f-86ba4fa4e81b
+status: stable
+description: Detects GenericUpdater.exe initiating outbound UDP traffic to destination port 5354, consistent with the DNS variant’s TXT-style beaconing.
+author: Seyyit Unutmaz <seyyit.unutmaz@threatmonit.io>
+date: 2025/08/15
+references:
+- ThreatMon Malware R&D
+logsource:
+  product: windows
+  category: network_connection
+detection:
+  img:
+    Image|endswith:
+      - '\GenericUpdater.exe'
+  proto:
+    Protocol: udp
+  out:
+    Initiated: true
+  port:
+    DestinationPort: 5354
+  condition: img and proto and out and port
+falsepositives:
+  - "Rare: legitimate admin/update tool named GenericUpdater.exe using UDP"
+level: high
